@@ -1,0 +1,98 @@
+[
+    {
+        "id": "1",
+        "name": "The Weeknd",
+        "imageUrl": "https://randomuser.me/api/portraits/women/12.jpg",
+        "genre": "R&B",
+        "songCount": 45,
+        "albumIds": ["1", "2"]
+    },
+    {
+        "id": "2",
+        "name": "Dua Lipa",
+        "imageUrl": "https://randomuser.me/api/portraits/women/32.jpg",
+        "genre": "Pop",
+        "songCount": 32,
+        "albumIds": ["2", "3"]
+    },
+    {
+        "id": "3",
+        "name": "Taylor Swift",
+        "imageUrl": "https://randomuser.me/api/portraits/women/44.jpg",
+        "genre": "Pop",
+        "songCount": 78,
+        "albumIds": ["1", "2"]
+    },
+    {
+        "id": "4",
+        "name": "Drake",
+        "imageUrl": "https://randomuser.me/api/portraits/men/12.jpg",
+        "genre": "Hip Hop",
+        "songCount": 68,
+        "albumIds": ["1", "2"]
+    },
+    {
+        "id": "5",
+        "name": "Ariana Grande",
+        "imageUrl": "https://randomuser.me/api/portraits/women/22.jpg",
+        "genre": "Pop",
+        "songCount": 42,
+        "albumIds": ["1", "2"]
+    },
+    {
+        "id": "6",
+        "name": "Ed Sheeran",
+        "imageUrl": "https://randomuser.me/api/portraits/men/22.jpg",
+        "genre": "Pop",
+        "songCount": 55,
+        "albumIds": ["1", "2"]
+    },
+    {
+        "id": "7",
+        "name": "Billie Eilish",
+        "imageUrl": "https://randomuser.me/api/portraits/women/33.jpg",
+        "genre": "Alternative",
+        "songCount": 28,
+        "albumIds": ["1", "2"]
+    },
+    {
+        "id": "8",
+        "name": "Post Malone",
+        "imageUrl": "https://randomuser.me/api/portraits/men/44.jpg",
+        "genre": "Hip Hop",
+        "songCount": 38,
+        "albumIds": ["1", "2"]
+    },
+    {
+        "id": "9",
+        "name": "Beyoncé",
+        "imageUrl": "https://randomuser.me/api/portraits/women/55.jpg",
+        "genre": "R&B",
+        "songCount": 72,
+        "albumIds": ["1", "2"]
+    },
+    {
+        "id": "10",
+        "name": "Kendrick Lamar",
+        "imageUrl": "https://randomuser.me/api/portraits/men/55.jpg",
+        "genre": "Hip Hop",
+        "songCount": 47,
+        "albumIds": ["1", "2"]
+    },
+    {
+        "id": "11",
+        "name": "SZA",
+        "imageUrl": "https://randomuser.me/api/portraits/women/66.jpg",
+        "genre": "R&B",
+        "songCount": 35,
+        "albumIds": ["1", "2"]
+    },
+    {
+        "id": "12",
+        "name": "Harry Styles",
+        "imageUrl": "https://randomuser.me/api/portraits/men/66.jpg",
+        "genre": "Pop",
+        "songCount": 29,
+        "albumIds": ["1", "2"]
+    }
+]

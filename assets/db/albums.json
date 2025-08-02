@@ -1,0 +1,82 @@
+[
+    {
+        "id": "1",
+        "title": "After Hours",
+        "artist": "The Weeknd",
+        "year": "2020",
+        "artistId": "1",
+        "songCount": 14,
+        "coverUrl": "https://picsum.photos/600/400?random=21",
+        "genre": "R&B"
+    },
+    {
+        "id": "2",
+        "title": "Future Nostalgia",
+        "artist": "Dua Lipa",
+        "year": "2020",
+        "artistId": "1",
+        "songCount": 11,
+        "coverUrl": "https://picsum.photos/600/400?random=22",
+        "genre": "Pop"
+    },
+    {
+        "id": "3",
+        "title": "Midnights",
+        "artist": "Taylor Swift",
+        "year": "2022",
+        "artistId": "1",
+        "songCount": 13,
+        "coverUrl": "https://picsum.photos/600/400?random=23",
+        "genre": "Pop"
+    },
+    {
+        "id": "4",
+        "title": "Scorpion",
+        "artist": "Drake",
+        "year": "2018",
+        "artistId": "1",
+        "songCount": 25,
+        "coverUrl": "https://picsum.photos/600/400?random=24",
+        "genre": "Hip Hop"
+    },
+    {
+        "id": "5",
+        "title": "thank u, next",
+        "artist": "Ariana Grande",
+        "year": "2019",
+        "artistId": "1",
+        "songCount": 12,
+        "coverUrl": "https://picsum.photos/600/400?random=25",
+        "genre": "Pop"
+    },
+    {
+        "id": "6",
+        "title": "÷ (Divide)",
+        "artist": "Ed Sheeran",
+        "year": "2017",
+        "artistId": "1",
+        "songCount": 16,
+        "coverUrl": "https://picsum.photos/600/400?random=26",
+        "genre": "Pop"
+    },
+    {
+        "id": "7",
+        "title": "When We All Fall Asleep, Where Do We Go?",
+        "artist": "Billie Eilish",
+        "year": "2019",
+        "artistId": "1",
+        "songCount": 14,
+        "coverUrl": "https://picsum.photos/600/400?random=27",
+        "genre": "Alternative"
+    },
+    {
+        "id": "8",
+        "title": "Beerbongs & Bentleys",
+        "artist": "Post Malone",
+        "year": "2018",
+        "artistId": "1",
+        "songCount": 18,
+        "coverUrl": "https://picsum.photos/600/400?random=28",
+        "genre": "Hip Hop"
+    }
+]
