@@ -22,7 +22,9 @@ class _AllSongsScreenState extends State<AllSongsScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: const Text('All Songs')),
+      appBar: AppBar(
+        title: const Text('All Songs', style: TextStyle(fontSize: 18)),
+      ),
       body: FutureBuilder<List<Song>>(
         future: _songsFuture,
         builder: (context, snapshot) {

@@ -46,21 +46,24 @@ class _AlbumDetailScreenState extends State<AlbumDetailScreen> {
                   style: Theme.of(context).textTheme.headlineMedium?.copyWith(
                     fontWeight: FontWeight.bold,
                     color: Colors.white,
+                    fontSize: 18,
                   ),
                 ),
                 const SizedBox(height: 8),
                 Text(
                   widget.album.artist,
-                  style: Theme.of(
-                    context,
-                  ).textTheme.titleLarge?.copyWith(color: Colors.grey[400]),
+                  style: Theme.of(context).textTheme.titleLarge?.copyWith(
+                    color: Colors.grey[400],
+                    fontSize: 14,
+                  ),
                 ),
                 const SizedBox(height: 8),
                 Text(
                   '${widget.album.year} • ${widget.album.songCount} songs • ${widget.album.genre}',
-                  style: Theme.of(
-                    context,
-                  ).textTheme.bodyLarge?.copyWith(color: Colors.grey[400]),
+                  style: Theme.of(context).textTheme.bodyLarge?.copyWith(
+                    color: Colors.grey[400],
+                    fontSize: 12,
+                  ),
                 ),
                 const SizedBox(height: 24),
                 Text(
@@ -68,6 +71,7 @@ class _AlbumDetailScreenState extends State<AlbumDetailScreen> {
                   style: Theme.of(context).textTheme.titleLarge?.copyWith(
                     fontWeight: FontWeight.bold,
                     color: Colors.white,
+                    fontSize: 18,
                   ),
                 ),
               ]),
@@ -109,15 +113,18 @@ class _AlbumDetailScreenState extends State<AlbumDetailScreen> {
                     (context, index) => ListTile(
                       leading: Text(
                         '${index + 1}',
-                        style: TextStyle(color: Colors.grey[400], fontSize: 16),
+                        style: TextStyle(color: Colors.grey[400], fontSize: 14),
                       ),
                       title: Text(
                         songs[index].title,
-                        style: const TextStyle(color: Colors.white),
+                        style: const TextStyle(
+                          color: Colors.white,
+                          fontSize: 14,
+                        ),
                       ),
                       subtitle: Text(
                         songs[index].duration,
-                        style: TextStyle(color: Colors.grey[400]),
+                        style: TextStyle(color: Colors.grey[400], fontSize: 12),
                       ),
                       trailing: IconButton(
                         icon: const Icon(Icons.more_vert, color: Colors.grey),

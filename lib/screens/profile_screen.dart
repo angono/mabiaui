@@ -6,13 +6,20 @@ class ProfileScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: const Text('Profile')),
+      appBar: AppBar(
+        title: const Text('Profile', style: TextStyle(fontSize: 18)),
+      ),
       body: ListView(
         padding: const EdgeInsets.symmetric(horizontal: 24),
 
         children: [
           CircleAvatar(radius: 50),
-          Text('User Name'),
+          SizedBox(height: 10),
+          Align(
+            alignment: Alignment.center,
+            child: Text('User Name', style: TextStyle(fontSize: 16)),
+          ),
+          SizedBox(height: 10),
           SwitchListTile(
             title: Text('Dark Mode'),
             value: true,

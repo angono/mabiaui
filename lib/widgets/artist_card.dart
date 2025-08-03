@@ -85,6 +85,7 @@ class ArtistCard extends StatelessWidget {
                     style: Theme.of(context).textTheme.bodyLarge!.copyWith(
                       fontWeight: FontWeight.bold,
                       color: Colors.white,
+                      fontSize: 12,
                     ),
                     maxLines: 1,
                     overflow: TextOverflow.ellipsis,
@@ -92,9 +93,10 @@ class ArtistCard extends StatelessWidget {
                   SizedBox(height: 4),
                   Text(
                     '${artist.songCount} songs • ${artist.genre}',
-                    style: Theme.of(
-                      context,
-                    ).textTheme.bodySmall!.copyWith(color: Colors.grey[400]),
+                    style: Theme.of(context).textTheme.bodySmall!.copyWith(
+                      color: Colors.grey[400],
+                      fontSize: 11,
+                    ),
                     maxLines: 1,
                     overflow: TextOverflow.ellipsis,
                   ),

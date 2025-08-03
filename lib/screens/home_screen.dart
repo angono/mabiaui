@@ -24,8 +24,7 @@ class _HomeScreenState extends State<HomeScreen> {
     _songsFuture = _dataService.getSongs();
     _artistsFuture = _dataService.getArtists();
     _albumsFuture = _dataService.getAlbums();
-        _genresFuture = _dataService.getGenres();
-
+    _genresFuture = _dataService.getGenres();
   }
 
   @override
@@ -93,7 +92,7 @@ class _HomeScreenState extends State<HomeScreen> {
             ),
           ),
           SliverPadding(
-            padding: const EdgeInsets.only(top: 16, left: 16, bottom: 32),
+            padding: const EdgeInsets.only(top: 16, left: 16, bottom: 16),
             sliver: _buildRecentlyPlayedSliver(),
           ),
 
@@ -164,7 +163,7 @@ class _HomeScreenState extends State<HomeScreen> {
             ),
           ),
           SliverPadding(
-            padding: const EdgeInsets.only(left: 16, bottom: 32),
+            padding: const EdgeInsets.only(left: 16, bottom: 16),
             sliver: _buildPopularAlbumsSliver(),
           ),
 
@@ -202,11 +201,11 @@ class _HomeScreenState extends State<HomeScreen> {
             ),
           ),
           SliverPadding(
-            padding: const EdgeInsets.only(left: 16, bottom: 32),
+            padding: const EdgeInsets.only(left: 16, bottom: 16),
             sliver: _buildPopularGenresSliver(),
           ),
           // Footer Spacer
-          const SliverToBoxAdapter(child: SizedBox(height: 80)),
+          const SliverToBoxAdapter(child: SizedBox(height: 40)),
         ],
       ),
       bottomSheet: _buildNowPlayingBar(playerService),
@@ -219,6 +218,7 @@ class _HomeScreenState extends State<HomeScreen> {
       style: Theme.of(context).textTheme.headlineSmall?.copyWith(
         fontWeight: FontWeight.bold,
         color: Colors.white,
+        fontSize: 18,
       ),
     );
   }
@@ -453,7 +453,8 @@ class _HomeScreenState extends State<HomeScreen> {
       },
     );
   }
-Widget _buildPopularGenresSliver() {
+
+  Widget _buildPopularGenresSliver() {
     return FutureBuilder<List<Genre>>(
       future: _genresFuture,
       builder: (context, snapshot) {

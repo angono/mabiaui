@@ -21,7 +21,9 @@ class _AllArtistsScreenState extends State<AllArtistsScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: const Text('All Artists')),
+      appBar: AppBar(
+        title: const Text('All Artists', style: TextStyle(fontSize: 18)),
+      ),
       body: FutureBuilder<List<Artist>>(
         future: _artistsFuture,
         builder: (context, snapshot) {

@@ -1,9 +1,5 @@
 import 'package:flutter/material.dart';
-import '../models/genre_model.dart';
-import '../services/data_service.dart';
-import '../widgets/genre_card.dart';
-import '../widgets/genre_card_skeleton.dart';
-import 'genre_detail_screen.dart';
+import 'package:mabiaui/screens/screens.dart';
 
 class AllGenresScreen extends StatefulWidget {
   const AllGenresScreen({super.key});
@@ -25,7 +21,9 @@ class _AllGenresScreenState extends State<AllGenresScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: const Text('All Genres')),
+      appBar: AppBar(
+        title: const Text('All Genres', style: TextStyle(fontSize: 18)),
+      ),
       body: FutureBuilder<List<Genre>>(
         future: _genresFuture,
         builder: (context, snapshot) {

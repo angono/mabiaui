@@ -47,6 +47,7 @@ class _GenreDetailScreenState extends State<GenreDetailScreen> {
                       style: Theme.of(context).textTheme.displaySmall?.copyWith(
                         color: Colors.white,
                         fontWeight: FontWeight.bold,
+                        fontSize: 18,
                       ),
                     ),
                   ),

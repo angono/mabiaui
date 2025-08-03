@@ -37,6 +37,7 @@ class GenreCard extends StatelessWidget {
                   style: Theme.of(context).textTheme.headlineSmall?.copyWith(
                     color: Colors.white,
                     fontWeight: FontWeight.bold,
+                    fontSize: 12,
                     shadows: [
                       Shadow(
                         color: Colors.black.withValues(alpha: 0.8),
@@ -51,9 +52,10 @@ class GenreCard extends StatelessWidget {
             const SizedBox(height: 8),
             Text(
               '${genre.name} Music',
-              style: Theme.of(
-                context,
-              ).textTheme.bodyMedium?.copyWith(color: Colors.grey[400]),
+              style: Theme.of(context).textTheme.bodyMedium?.copyWith(
+                color: Colors.grey[400],
+                fontSize: 12,
+              ),
             ),
           ],
         ),

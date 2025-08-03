@@ -98,6 +98,7 @@ class MusicCard extends StatelessWidget {
                     style: Theme.of(context).textTheme.bodyLarge?.copyWith(
                       fontWeight: FontWeight.bold,
                       color: Colors.white,
+                      fontSize: 12,
                     ),
                     maxLines: 1,
                     overflow: TextOverflow.ellipsis,
@@ -109,6 +110,7 @@ class MusicCard extends StatelessWidget {
                         song.artist,
                         style: Theme.of(context).textTheme.bodyMedium?.copyWith(
                           color: Colors.grey[400],
+                          fontSize: 11,
                         ),
                         maxLines: 1,
                         overflow: TextOverflow.ellipsis,

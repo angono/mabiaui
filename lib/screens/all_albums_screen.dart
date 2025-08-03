@@ -21,7 +21,9 @@ class _AllAlbumsScreenState extends State<AllAlbumsScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: const Text('All Albums')),
+      appBar: AppBar(
+        title: const Text('All Albums', style: TextStyle(fontSize: 18)),
+      ),
       body: FutureBuilder<List<Album>>(
         future: _albumsFuture,
         builder: (context, snapshot) {

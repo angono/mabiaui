@@ -46,21 +46,24 @@ class _ArtistDetailScreenState extends State<ArtistDetailScreen> {
                   style: Theme.of(context).textTheme.headlineMedium?.copyWith(
                     fontWeight: FontWeight.bold,
                     color: Colors.white,
+                    fontSize: 18,
                   ),
                 ),
                 const SizedBox(height: 8),
                 Text(
                   '${widget.artist.songCount} songs • ${widget.artist.genre}',
-                  style: Theme.of(
-                    context,
-                  ).textTheme.bodyLarge?.copyWith(color: Colors.grey[400]),
+                  style: Theme.of(context).textTheme.bodyLarge?.copyWith(
+                    color: Colors.grey[400],
+                    fontSize: 14,
+                  ),
                 ),
                 const SizedBox(height: 8),
                 Text(
                   '5k followers',
-                  style: Theme.of(
-                    context,
-                  ).textTheme.bodyLarge?.copyWith(color: Colors.grey[400]),
+                  style: Theme.of(context).textTheme.bodyLarge?.copyWith(
+                    color: Colors.grey[400],
+                    fontSize: 12,
+                  ),
                 ),
                 const SizedBox(height: 24),
                 Text(
@@ -68,6 +71,7 @@ class _ArtistDetailScreenState extends State<ArtistDetailScreen> {
                   style: Theme.of(context).textTheme.titleLarge?.copyWith(
                     fontWeight: FontWeight.bold,
                     color: Colors.white,
+                    fontSize: 18,
                   ),
                 ),
               ]),
@@ -118,15 +122,18 @@ class _ArtistDetailScreenState extends State<ArtistDetailScreen> {
                       ),
                       title: Text(
                         songs[index].title,
-                        style: const TextStyle(color: Colors.white),
+                        style: const TextStyle(
+                          color: Colors.white,
+                          fontSize: 14,
+                        ),
                       ),
                       subtitle: Text(
                         songs[index].album,
-                        style: TextStyle(color: Colors.grey[400]),
+                        style: TextStyle(color: Colors.grey[400], fontSize: 12),
                       ),
                       trailing: Text(
                         songs[index].duration,
-                        style: TextStyle(color: Colors.grey[400]),
+                        style: TextStyle(color: Colors.grey[400], fontSize: 11),
                       ),
                       onTap: () {
                         // Play song
