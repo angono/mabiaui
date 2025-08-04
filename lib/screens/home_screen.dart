@@ -313,7 +313,7 @@ class _HomeScreenState extends State<HomeScreen> {
           );
         }
 
-        final songs = snapshot.data!;
+        final songs = snapshot.data!.take(8).toList();
         return SliverToBoxAdapter(
           child: SizedBox(
             height: 210,
@@ -369,7 +369,7 @@ class _HomeScreenState extends State<HomeScreen> {
           );
         }
 
-        final artists = snapshot.data!;
+        final artists = snapshot.data!.take(8).toList();
         return SliverGrid(
           gridDelegate: const SliverGridDelegateWithMaxCrossAxisExtent(
             maxCrossAxisExtent: 300,
@@ -428,7 +428,7 @@ class _HomeScreenState extends State<HomeScreen> {
           );
         }
 
-        final albums = snapshot.data!;
+        final albums = snapshot.data!.take(8).toList();
         return SliverToBoxAdapter(
           child: SizedBox(
             height: 230,
