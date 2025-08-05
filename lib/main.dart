@@ -4,9 +4,13 @@ import 'package:provider/provider.dart';
 
 void main() {
   WidgetsFlutterBinding.ensureInitialized();
+
   runApp(
-    ChangeNotifierProvider(
-      create: (context) => PlayerService(),
+    MultiProvider(
+      providers: [
+        ChangeNotifierProvider(create: (context) => PlayerService()),
+        Provider(create: (context) => DataService()),
+      ],
       child: const MyApp(),
     ),
   );
@@ -20,25 +24,55 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Mabiaplay',
       theme: ThemeData.dark().copyWith(
-        scaffoldBackgroundColor: Colors.black,
+        scaffoldBackgroundColor: const Color(0xFF121212),
         colorScheme: ColorScheme.fromSeed(
-          seedColor: Colors.purple,
+          seedColor: const Color(0xFF1DB954), // Spotify-style green
           brightness: Brightness.dark,
+          primary: const Color(0xFF1DB954),
+          secondary: const Color(0xFF1DB954),
         ),
-        appBarTheme: AppBarTheme(
+        appBarTheme: const AppBarTheme(
           backgroundColor: Colors.transparent,
           elevation: 0,
+          centerTitle: true,
           titleTextStyle: TextStyle(
             fontWeight: FontWeight.bold,
-            fontSize: 18,
+            fontSize: 22,
             color: Colors.white,
+            letterSpacing: -0.5,
           ),
         ),
         bottomNavigationBarTheme: BottomNavigationBarThemeData(
-          backgroundColor: Colors.black,
-          selectedItemColor: Colors.purple,
+          backgroundColor: const Color(0xFF181818),
+          selectedItemColor: const Color(0xFF1DB954),
           unselectedItemColor: Colors.grey.shade600,
+          selectedLabelStyle: const TextStyle(fontSize: 10),
+          unselectedLabelStyle: const TextStyle(fontSize: 10),
+          showSelectedLabels: true,
+          showUnselectedLabels: true,
+          type: BottomNavigationBarType.fixed,
         ),
+        textTheme: TextTheme(
+          headlineSmall: const TextStyle(
+            fontWeight: FontWeight.bold,
+            fontSize: 20,
+            color: Colors.white,
+          ),
+          titleMedium: TextStyle(
+            fontWeight: FontWeight.w500,
+            fontSize: 16,
+            color: Colors.grey.shade300,
+          ),
+          bodyMedium: const TextStyle(
+            fontWeight: FontWeight.normal,
+            fontSize: 14,
+            color: Colors.white70,
+          ),
+        ),
+        // cardTheme: CardTheme(
+        //   color: const Color(0xFF282828),
+        //   shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(8)),
+        // ),
       ),
       debugShowCheckedModeBanner: false,
       home: MainScreen(),

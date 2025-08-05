@@ -3,48 +3,65 @@
         "id": "1",
         "name": "Pop",
         "imageUrl": "https://picsum.photos/300/300?random=101",
-        "color": "#FF6B6B"
+        "color": "#FF6B6B",
+        "songCount": 1000,
+        "artistCount": 50
+
     },
     {
         "id": "2",
         "name": "Rock",
         "imageUrl": "https://picsum.photos/300/300?random=102",
-        "color": "#4ECDC4"
+        "color": "#4ECDC4",
+        "songCount": 1000,
+        "artistCount": 50
     },
     {
         "id": "3",
         "name": "Hip Hop",
         "imageUrl": "https://picsum.photos/300/300?random=103",
-        "color": "#FFD166"
+        "color": "#FFD166",
+        "songCount": 1000,
+        "artistCount": 50
     },
     {
         "id": "4",
         "name": "Electronic",
         "imageUrl": "https://picsum.photos/300/300?random=104",
-        "color": "#6A0572"
+        "color": "#6A0572",
+        "songCount": 1000,
+        "artistCount": 50
     },
     {
         "id": "5",
         "name": "R&B",
         "imageUrl": "https://picsum.photos/300/300?random=105",
-        "color": "#1A535C"
+        "color": "#1A535C",
+        "songCount": 1000,
+        "artistCount": 50
     },
     {
         "id": "6",
         "name": "Jazz",
         "imageUrl": "https://picsum.photos/300/300?random=106",
-        "color": "#EF476F"
+        "color": "#EF476F",
+        "songCount": 1000,
+        "artistCount": 50
     },
     {
         "id": "7",
         "name": "Classical",
         "imageUrl": "https://picsum.photos/300/300?random=107",
-        "color": "#073B4C"
+        "color": "#073B4C",
+        "songCount": 1000,
+        "artistCount": 50
     },
     {
         "id": "8",
         "name": "Country",
         "imageUrl": "https://picsum.photos/300/300?random=108",
-        "color": "#06D6A0"
+        "color": "#06D6A0",
+        "songCount": 1000,
+        "artistCount": 50
     }
 ]

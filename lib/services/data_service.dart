@@ -42,6 +42,17 @@ class DataService {
     return songs.where((song) => song.albumId == albumId).toList();
   }
 
+  // data_service.dart
+  Future<List<Album>> getAlbumsByArtist(String artistId) async {
+    final allAlbums = await getAlbums();
+    return allAlbums.where((album) => album.artist == artistId).toList();
+  }
+
+  Future<List<Artist>> getArtistsByGenre(String genre) async {
+    final allArtists = await getArtists();
+    return allArtists.where((artist) => artist.genre == genre).toList();
+  }
+
   // Add these methods to filter songs
   // Future<List<Song>> getSongsByArtist(String artistName) async {
   //   final songs = await getSongs();
